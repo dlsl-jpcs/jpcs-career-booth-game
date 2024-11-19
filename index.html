@@ -1,0 +1,101 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JPCS Aviator </title>
+	<meta name="description" content="JPCS Career Fair Game. Made with <3 by @tyronscott_" />
+	<meta name="author" content="tyronscott_" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic' rel='stylesheet'
+		type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/game.css" />
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/three.min.js"></script>
+	<script type="text/javascript" src="js/game.js" />
+	</script>
+
+</head>
+
+<body>
+	<div class="game-holder" id="gameHolder">
+		<div class="header">
+			<h1><span>JPCS</span>Aviator</h1>
+			<h2>Made with &lt;3</h2>
+			<h2>by <span>@tyronscott_</span></h2>
+			<div class="score" id="score">
+				<div class="score__content" id="level">
+					<div class="score__label">level</div>
+					<div class="score__value score__value--level" id="levelValue">1</div>
+					<svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
+						<circle id="levelCircleBgr" r="80" cx="100" cy="100" fill="none" stroke="#d1b790"
+							stroke-width="24px" />
+						<circle id="levelCircleStroke" r="80" cx="100" cy="100" fill="none" #f25346 stroke="#68c3c0"
+							stroke-width="14px" stroke-dasharray="502" />
+					</svg>
+				</div>
+				<div class="score__content" id="dist">
+					<div class="score__label">distance</div>
+					<div class="score__value score__value--dist" id="distValue">000</div>
+				</div>
+				<div class="score__content" id="energy">
+					<div class="score__label">energy</div>
+					<div class="score__value score__value--energy" id="energyValue">
+						<div class="energy-bar" id="energyBar"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="world" id="world"></div>
+		<div class="message message--replay" id="replayMessage">Click to Replay</div>
+		<div class="message message--tapId" id="tapIdMessage">Tap your ID to play!</div>
+		<div class="message message--invalidId" id="invalidIdMessage">Invalid ID. Try again</div>
+		<div class="message message--instructions" id="instructions">Grab the blue pills<span>avoid the red ones</span>
+		</div>
+
+
+
+		<div id="leaderboard-container">
+			<div id="leaderboard">
+				<div class="ribbon"></div>
+				<table id="leaderboard-table">
+					<tr>
+						<td class="number">1</td>
+						<td class="name">Lee Taeyong</td>
+						<td class="points">
+							258.244 <img class="gold-medal"
+								src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true"
+								alt="gold medal" />
+						</td>
+					</tr>
+					<tr>
+						<td class="number">2</td>
+						<td class="name">Mark Lee</td>
+						<td class="points">258.242</td>
+					</tr>
+					<tr>
+						<td class="number">3</td>
+						<td class="name">Xiao Dejun</td>
+						<td class="points">258.223</td>
+					</tr>
+					<tr>
+						<td class="number">4</td>
+						<td class="name">Qian Kun</td>
+						<td class="points">258.212</td>
+					</tr>
+					<tr>
+						<td class="number">5</td>
+						<td class="name">Johnny Suh</td>
+						<td class="points">258.208</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Demo links -->
+</body>
+
+</html>
